@@ -4,6 +4,7 @@ services:
   webserver:
     image: webserver:v1
     network_mode: bridge
+    command: tail -f /dev/null
     volumes:
       - mysite:/var/www/html
     restart: on-failure
