@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  webserver:
+    image: webserver:v1
+    network_mode: bridge
+    volumes:
+      - mysite:/var/www/html
+    restart: on-failure
+
+volumes:
+  mysite:
