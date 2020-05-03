@@ -8,5 +8,5 @@ CMD echo "httpd" >> ~/.bashrc
 CMD httpd
 COPY index.html /var/www/html
 COPY assets /var/www/html
-#CMD unzip ngok-stable-linux-amd64.zip
-#CMD ./ngrok http 80
+CMD unzip ngok-stable-linux-amd64.zip
+CMD ./ngrok http 80
